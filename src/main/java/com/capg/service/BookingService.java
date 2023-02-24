@@ -11,6 +11,6 @@ public interface BookingService {
 	public List<Booking> findAll();
 	public Booking findById(long id)throws BookingNotFoundException;
 	public List<Booking> findByDate(LocalDate date);
-	public void deleteBooking(Booking booking);
+	public Booking deleteBooking(long id);
 }
 
